@@ -1,0 +1,15 @@
+{application, rest_api, [
+	{description, "Cowbow Rest API"},
+	{vsn, "1"},
+	{modules, []},
+	{registered, [rest_api_sup]},
+	{applications, [
+		kernel,
+		stdlib,
+                lager,
+		cowboy,
+		jiffy
+	]},
+	{mod, {rest_api, []}},
+	{env, []}
+]}.
